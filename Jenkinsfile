@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'oss2022fall'
         CLUSTER_NAME = 'kube'
         LOCATION = 'asia-northeast3-a'
-        CREDENTIALS_ID = 'gke'
+        CREDENTIALS_ID = '25e628d7-2697-4d33-9d87-cf999794e66c'
     }
     stages {
         stage("Checkout code") {
@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("pjbear/hello:${env.BUILD_ID}")
+                    myapp = docker.build("crolvlee/hello:${env.BUILD_ID}")
                 }
             }
         }
