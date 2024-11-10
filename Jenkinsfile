@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'oss2022fall'
+        PROJECT_ID = 'open'
         CLUSTER_NAME = 'kube'
-        LOCATION = 'asia-northeast3-a'
+        LOCATION = 'us-central1-c'
         CREDENTIALS_ID = '25e628d7-2697-4d33-9d87-cf999794e66c'
     }
     stages {
